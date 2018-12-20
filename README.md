@@ -1,5 +1,12 @@
 # CSS Selectors 3 in the Wolfram Language
-Implementation of CSS Selectors 3 for Wolfram Language SymbolicXML expressions.
+Implementation of CSS Selectors 3 for Wolfram Language SymbolicXML expressions. This work is motivated by the Stack Exchange post [css-selectors-for-symbolic-xml](https://mathematica.stackexchange.com/questions/49052/css-selectors-for-symbolic-xml). 
+
+The [CSS Selectors 3 specification](https://www.w3.org/TR/selectors-3/) is followed as far as possible, but I make no claims to be absolutely conformant. For example, being that WL SymbolicXML is a static expression, any HTML/XML elements such as dynamic pseudo classes (e.g. active/hover/focus) and pseudo elements (e.g. before/after) are not found.
+
+## Load Package
+```
+In[] := Needs["Selectors3`"]
+```
 
 ## Testing on HTML source
 Being a little meta, let's test this against the [WC3 page for Selectors Level 3](https://www.w3.org/TR/selectors-3/).
